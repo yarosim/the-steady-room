@@ -1,0 +1,111 @@
+{
+ "channel": "the-steady-room",
+ "schema": "months keyed YYYY-MM; page reads current month, falls back to 'default'",
+ "default": {
+  "free": "Boundary Scripts Starter: 25 calm one-sentence scripts",
+  "paid": {
+   "name": "The Steady Room Boundaries Workbook (30 pages)",
+   "price_usd": 9,
+   "stripe_link": "https://buy.stripe.com/aFacN52rWdBybjQdHK2Ji2j"
+  }
+ },
+ "months": {
+  "2026-11": {
+   "free": "Holiday Boundaries Text Pack: 20 copy-paste messages for family & in-laws",
+   "paid": {
+    "name": "The Steady Room Boundaries Workbook (30 pages)",
+    "price_usd": 9,
+    "stripe_link": "https://buy.stripe.com/aFacN52rWdBybjQdHK2Ji2j"
+   },
+   "free_url": "free/"
+  },
+  "2026-12": {
+   "free": "'Leave Early, Kindly' exit-line cheat sheet",
+   "paid": {
+    "name": "Year-End Relationship Review Journal",
+    "price_usd": 7,
+    "stripe_link": null
+   }
+  },
+  "2027-01": {
+   "free": "Boundary vs Request one-page test",
+   "paid": {
+    "name": "30-Day Boundaries Reset Workbook",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-02": {
+   "free": "Repair Phrases card: 30 ways to de-escalate a fight",
+   "paid": {
+    "name": "Couples Hard-Talk Conversation Deck (printable 52 cards)",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-03": {
+   "free": "People-Pleaser Self-Check quiz (20 items)",
+   "paid": {
+    "name": "Saying No Without Guilt mini-course PDF",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-04": {
+   "free": "20-Minute Break agreement template",
+   "paid": {
+    "name": "Fair Fight Planner",
+    "price_usd": 7,
+    "stripe_link": null
+   }
+  },
+  "2027-05": {
+   "free": "Mother's Day / parent boundaries scripts",
+   "paid": {
+    "name": "Adult Child\u2013Parent Boundaries Workbook",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-06": {
+   "free": "Wedding-season & plus-one boundary texts",
+   "paid": {
+    "name": "Engaged Couple Expectations Workbook",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-07": {
+   "free": "Summer travel with family: limits checklist",
+   "paid": {
+    "name": "Friendship Boundaries Workbook",
+    "price_usd": 7,
+    "stripe_link": null
+   }
+  },
+  "2027-08": {
+   "free": "Back-to-routine: chore & mental-load split sheet",
+   "paid": {
+    "name": "Household Fairness Planner for couples",
+    "price_usd": 7,
+    "stripe_link": null
+   }
+  },
+  "2027-09": {
+   "free": "Defensiveness decoder: 15 reframes",
+   "paid": {
+    "name": "Emotional Maturity 30-Day Journal",
+    "price_usd": 9,
+    "stripe_link": null
+   }
+  },
+  "2027-10": {
+   "free": "Holiday Boundaries Text Pack (refresh)",
+   "paid": {
+    "name": "Holiday Survival Planner (2027 edition)",
+    "price_usd": 7,
+    "stripe_link": null
+   }
+  }
+ }
+}

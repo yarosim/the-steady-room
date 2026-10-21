@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Steady Room | Calm, clear boundaries for real relationships</title>
+<meta name="description" content="Short, practical podcast episodes on boundaries, emotional maturity and healthier relationships. Get the free Holiday Boundaries Text Pack.">
+<link rel="canonical" href="https://yarosim.github.io/the-steady-room/"><meta property="og:title" content="The Steady Room"><meta property="og:description" content="Free: 20 kind, clear holiday messages for family and in-laws.">
+<meta property="og:image" content="https://yarosim.github.io/the-steady-room/og.png"><meta property="og:url" content="https://yarosim.github.io/the-steady-room/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<section class="hero"><div><div class="kick">THE STEADY ROOM PODCAST</div><h1>Calm, kind, clear boundaries for the relationships that matter.</h1>
+<p>Short episodes with Mara Ellison on boundaries, hard conversations and emotional maturity. One clear idea, one thing to try today.</p>
+<a class="btn" href="#free">Get the free text pack</a> <a class="btn alt" id="yt" href="#episodes">Subscribe on YouTube</a></div>
+<img src="mara.jpg" alt="Mara Ellison, host of The Steady Room, at the podcast microphone"></section>
+
+<section class="card" id="free"><div class="kick">FREE DOWNLOAD</div><h2 id="freeTitle">Holiday Boundaries Text Pack</h2>
+<p>20 warm, copy-paste messages for family and in-laws: visit lengths, hosting, gift limits, comments at dinner, and what to say when someone pushes back.</p>
+<form action="https://formsubmit.co/pnsgloballlc@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Steady Room signup: Holiday Boundaries Text Pack"><input type="hidden" name="_next" value="https://yarosim.github.io/the-steady-room/free/">
+<input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none">
+<input type="hidden" name="source" value="the-steady-room-landing"><label>First name<input type="text" name="name" required></label>
+<label>Email<input type="email" name="email" required></label><button class="btn" type="submit">Send me the free pack</button>
+<p><small>You'll get the download right away and occasional emails from The Steady Room. Unsubscribe anytime. See <a href="privacy.html">privacy</a>.</small></p></form></section>
+
+<section class="card" id="featured"><div class="kick">FEATURED THIS MONTH</div><h2 id="paidName">The Steady Room Boundaries Workbook</h2>
+<p id="paidDesc">30 printable pages: scripts, worksheets, 60 ready-to-use lines and a 30-day practice plan.</p>
+<p><strong id="paidPrice">$9</strong> <small>instant PDF download</small></p><a class="btn" id="buy" href="https://buy.stripe.com/aFacN52rWdBybjQdHK2Ji2j">Get the workbook</a></section>
+
+<section id="episodes"><h2>Recent episodes</h2><div class="eps">
+<div class="ep"><strong>Boundary or Control? The One-Sentence Test</strong><p class="muted">How to tell a healthy limit from a demand.</p></div>
+<div class="ep"><strong>When Every Hard Talk Turns Defensive</strong><p class="muted">One change that lowers the temperature.</p></div>
+<div class="ep"><strong>The 20-Minute Break That Saves Arguments</strong><p class="muted">Why pausing works, and how to come back.</p></div></div>
+<p class="muted">New episodes on <a href="https://www.youtube.com/@TheSteadyRoomPodcast">YouTube</a>, Reels and TikTok.</p></section>
+
+<footer><p>The Steady Room shares general education about relationships. It isn't therapy or professional advice. If you're in crisis in the US, call or text 988. If you feel unsafe, the National Domestic Violence Hotline is 1-800-799-7233.</p>
+<p>Mara Ellison is a fictional host. Episodes use AI-generated video and voice. <a href="privacy.html">Privacy</a> · © 2026 The Steady Room</p></footer></div>
+<script>
+const YT="https://www.youtube.com/@TheSteadyRoomPodcast?sub_confirmation=1";if(YT)document.getElementById('yt').href=YT;
+fetch('products.json').then(r=>r.json()).then(d=>{const n=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
+const k=n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0');const m=d.months&&d.months[k]||{};const p=(m.paid&&m.paid.stripe_link)?m.paid:d.default.paid;
+document.getElementById('paidName').textContent=p.name;document.getElementById('paidPrice').textContent='$'+p.price_usd;if(p.desc)document.getElementById('paidDesc').textContent=p.desc;
+document.getElementById('buy').href=p.stripe_link;}).catch(()=>{});
+</script></body></html>
