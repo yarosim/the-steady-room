@@ -1,0 +1,2 @@
+# Shopify customer-account page answers bots with 406 Not Acceptable; it works in browsers.
+^https://vb3mfp-qd\.myshopify\.com/account/?$
