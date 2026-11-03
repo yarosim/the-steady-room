@@ -1,0 +1,22 @@
+name: links-and-buy-check
+on:
+  pull_request:
+  schedule: [{cron: "0 14 * * 1"}]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude 'amazon\.com' --exclude 'formsubmit\.co' --exclude 'buy\.stripe\.com$' './**/*.html'
+          fail: true
+      - name: Buy links must be active AlphaPath Shopify products (vb3mfp-qd)
+        run: |
+          bad=0
+          for h in $(grep -rhoE 'vb3mfp-qd\.myshopify\.com/products/[a-z0-9-]+' --include=*.html --include=*.json --include=*.js . | sort -u | sed 's#.*/##'); do
+            c=$(curl -s -o /dev/null -w '%{http_code}' "https://vb3mfp-qd.myshopify.com/products/$h.js"); echo "$h $c"; [ "$c" = 200 ] || bad=1; done
+          if grep -rIEn 'buy\.stripe\.com/[A-Za-z0-9]{10,}|gumroad\.com/l/' --include=*.html --include=*.js --include=*.json .; then echo "::warning::legacy Stripe/Gumroad buy link; move to products.json -> Shopify"; fi
+          exit $bad
